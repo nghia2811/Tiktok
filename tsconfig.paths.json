@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@assets/*": ["./src/assets/*"],
+			"@layouts": ["./src/layouts/index"],
+            "@components/*": ["./src/components/*"],
+            "@pages/*": ["./src/pages/*"],
+			"@services/*": ["./src/services/*"],
+			"@schema/*": ["./src/schema/*"],
+			"@routes/*": ["./src/routes/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@type/*": ["./src/types/*"],
+            "@redux": ["./src/redux/index"],
+			"@data": ["./src/data/index"]
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes, NavLink, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./home";
 import Stuff from "./stuff";
 import Contact from "./contact";
@@ -11,20 +11,20 @@ function App() {
         <h1>Simple SPA</h1>
         <ul className="header">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <NavLink to="/stuff">Stuff</NavLink>
+            <Link to="/stuff">Stuff</Link>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className="content">
           <Routes>
-            <Route path="/" component={Home} />
-            <Route path="/stuff" component={Stuff} />
-            <Route path="/contact" component={Contact} />
+            <Route path="/" element={<Home />} />
+            <Route path="/stuff" element={<Stuff />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
